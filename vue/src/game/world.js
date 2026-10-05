@@ -5,6 +5,11 @@ export const world = {
     units: [],
     nextUnitId: 1,
 
+    reset() {
+        this.units.length = 0;
+        this.nextUnitId = 1;
+    },
+
     spawnUnit(col, row, color) {
         const { x, y } = cellToWorld(col, row);
         const u = new Unit({ id: this.nextUnitId++, x, y, color });

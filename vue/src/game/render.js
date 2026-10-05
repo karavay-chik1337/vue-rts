@@ -1,5 +1,5 @@
 import { CELL_HALF_W, CELL_HALF_H } from './constants.js';
-import { cellToWorld, worldToCell, worldToScreen, screenToWorld } from '../../../../../Desktop/iso.js';
+import { cellToWorld, worldToCell, worldToScreen, screenToWorld } from './iso.js';
 
 function drawCell(ctx, sx, sy, fill, stroke) {
     ctx.beginPath();
